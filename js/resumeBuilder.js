@@ -150,6 +150,11 @@ var pic = bio.biopic;
 formattedPic = HTMLbioPic.replace("%data%",pic);
 $("#header").append(formattedPic);
 
+var welcome = bio.welcomeMessage;
+var formattedWelcome = HTMLwelcomeMsg.replace("%data%",welcome);
+$("#header").append(formattedWelcome);
+
+
 
 var formattedProjectTitle = HTMLprojectTitle.replace("%data%",projects.projects[0].title);
 var formattedDates = HTMLprojectDates.replace("%data%",projects.projects[0].dates);

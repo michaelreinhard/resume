@@ -11,7 +11,7 @@ h5,
 h6 {
   padding:0;
   margin:0;
-  font-family: "Roboto", sans-serif;
+  font-family: "didot", serif;
 }
 
 .clear-fix {
@@ -26,7 +26,7 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #C0B283;
   line-height: 48px;
   display: inline;
 }
@@ -86,7 +86,7 @@ p {
 }
 
 a {
-  color: #1199c3;
+  color: "blue"; /*original #1199c3*/
   text-decoration: none;
   margin-top: 10px;
   display: block;
@@ -100,16 +100,16 @@ a {
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #373737; /*original f5ae23*/
   display: none;
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: #373737;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #373737; /*original f5ae23*/
 }
 
 .white-text {
@@ -118,24 +118,29 @@ a {
 }
 
 .gray {
-  background-color: #f3f3f3;
+  background-color: #f3f3f3; /* original: f3f3f3*/
+  color: #000;
   padding-bottom: 10px;
   clear:both;
 }
 
 .dark-gray {
-  background-color: #4a4a4a;
+  background-color: #f3f3f3; /*original 4a4a4a*/
+}
+
+#lets-connect {
+  background-color: #C0B283;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #DCD0C0; /*original 484848*/
 }
 
 .flex-box {
   display: -webkit-flex;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
@@ -159,7 +164,8 @@ ul {
 .biopic {
   float: left;
   padding: 10px;
-  width: 200px;
+  width: 150px;
+  height: 200px;
   display: none;
 }
 
@@ -194,7 +200,8 @@ span {
     margin-top: 10%;
   }
   .biopic {
-    width: 150px;
+    width: 100px;
+    height: 120px;
   }
   .welcome-message {
     display: none;

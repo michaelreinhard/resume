@@ -201,15 +201,23 @@ projects.display = function() {
         var formattedProjectTitle = HTMLprojectTitle.replace(data, projects.projects[p].title);
         var formattedDates = HTMLprojectDates.replace(data, projects.projects[p].dates);
         var formattedDescription = HTMLprojectDescription.replace(data, projects.projects[p].description);
-        var formattedImage = HTMLprojectImage.replace(data, projects.projects[p].images);
+        // var formattedImage = HTMLprojectImage.replace(data, projects.projects[p].images);
 
         $(".project-entry:last").append(formattedProjectTitle);
         $(".project-entry:last").append(formattedDates);
         $(".project-entry:last").append(formattedDescription);
-        $(".project-entry:last").append(formattedImage);
+        // var formattedImage = HTMLprojectImage.replace(data, projects.projects[p].images);
+        // console.log(formattedImage);
+        // var a = projects.projects[p].images;
+
+        projects.projects[p].images.forEach(function(image) {
+            console.log(image);
+            var formattedImage = HTMLprojectImage.replace(data, image);
+            $(".project-entry:last").append(formattedImage); 
+        });
+        // $(".project-entry:last").append(formattedImage);
     }
 };
-
 
 
 projects.display();
